@@ -14,6 +14,7 @@ async def main():
         format='%(filename)s:%(lineno)d #%(levelname)-8s '
                '[%(asctime)s] - %(name)s - %(message)s')
     logger.info('Starting bot')
+
     config = load_config()
 
     bot = Bot(token=config.tg_bot.BOT_TOKEN, parse_mode='HTML')
